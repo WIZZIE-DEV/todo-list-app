@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Todo list app || Awesome todo's</title>
+</head>
+<body>
+    <div class="container">
+        <div class="list__header">
+            <h1 class="list__header-heading">Add a todo</h1>
+            <form action="#" class="list__header-form">
+                <input type="text" placeholder="Create a todo" class="list__header-search">
+                <button class="list__header-btn">
+                    <svg class="list__header-icon">
+                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <div class="list__body">
+            <ul class="list__body-parent">
+                <li class="list__body-parent--item">
+                    <span><input type="checkbox" class="list__body-parent--checkbox"></span>
+                    <p class="paragraph"> Aiz Wallenstein!!!</p>
+                    <span class="deleteTodo">
+                        <svg class="list__body-parent--icon">
+                            <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                        </svg>
+                    </span>
+                </li>
+                <li class="list__body-parent--item">
+                    <span><input type="checkbox" class="list__body-parent--checkbox"></span>
+                    <p class="paragraph">Straw Hat Luffy!!!</p>
+                    <span class="deleteTodo">
+                        <svg class="list__body-parent--icon">
+                            <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                        </svg>
+                    </span>
+                </li>
+                    
+
+            </ul>
+        </div>
+    </div>
+   <script src="/js/index.js"></script>
+</body>
+</html>

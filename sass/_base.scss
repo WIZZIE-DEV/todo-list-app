@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-image: linear-gradient(to right bottom , #3543ddf3, #ee1ed9f1);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    //overflow: hidden;   
+    scroll-behavior: smooth;
+    color: #777;
+    font-family: tahoma;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center; 
+    flex: 0 0 40%; 
+//     &::-webkit-scrollbar{
+//         background-color:  #ccc;
+//         width: .8rem;
+//     }
+//     &::-webkit-scrollbar-thumb{
+//         background-color:#999;
+//         border-radius: 2rem;
+//     }
+ }

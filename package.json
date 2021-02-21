@@ -1,0 +1,9 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "todo list app with html,css,sass and js",
+  "main": "index.js",
+  "author": "wisdom ekeh <wisdom.dev@outlook.com>",
+  "license": "MIT",
+  "private": false
+}

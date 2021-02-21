@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #3543ddf3, #ee1ed9f1);
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  scroll-behavior: smooth;
+  color: #777;
+  font-family: tahoma;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 40%;
+}
+
+.container {
+  border-radius: 1rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+  margin: auto;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+
+@keyframes colorful {
+  0% {
+    background-image: linear-gradient(to left, #2cb325, #2d46c6, #d027c7);
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  70% {
+    background-image: linear-gradient(to right, #2cb325, #2d46c6, #d027c8);
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background-image: linear-gradient(to right bottom, #2cb325, #2d46c6, #d027c7);
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.list__header {
+  width: 45rem;
+}
+
+.list__header-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #33452d, #654335);
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: inline-block;
+  color: purple;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  margin-top: 2rem;
+  animation: colorful 3s infinite;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .list__header-heading {
+    background-image: linear-gradient(to right, #2cb325, #2d46c6, #d027c7);
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.list__header-heading:hover {
+  transform: scale(1.1);
+  text-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+  letter-spacing: .2rem;
+}
+
+.list__header-form {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex: 0 0 70%;
+}
+
+.list__header-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  transition: all .2s;
+  transform: scale(1.2) translateY(-0.6rem);
+  cursor: pointer;
+}
+
+.list__header-btn:focus {
+  outline: none;
+  transform: scale(1);
+}
+
+.list__header-btn:focus::after {
+  transform: scale(1);
+}
+
+.list__header-icon {
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  fill: #2d46c6;
+  transform: translateY(0.9rem);
+}
+
+.list__header-search {
+  flex: 0 0 80%;
+  padding: .5rem 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  color: currentColor;
+}
+
+.list__body {
+  width: 82%;
+  margin: auto;
+}
+
+.list__body-parent {
+  padding: 1rem 1rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list__body-parent--icon {
+  fill: #423e3e;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  cursor: pointer;
+  top: 17%;
+  left: 104%;
+}
+
+.list__body-parent--item {
+  font-size: 1.6rem;
+  background-color: #e1e7eed0;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: .7rem;
+  padding-left: 1rem;
+}
+
+.list__body-parent--item:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.list__body-parent--checkbox {
+  position: absolute;
+  top: 25%;
+  right: 104%;
+}
+/*# sourceMappingURL=main.css.map */
